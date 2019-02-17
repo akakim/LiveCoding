@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>인라인 방식 자바 스크립트와 </title>
+
+    <!-- 정보 + 제어가 모여있음. 분리이이이이해야지 -->
+    <!-- 부연설명 alert ('Hello JavaScript') 는 자바스크립트의 것이다 -->
+
+    <!-- 정보와 제어가 모여있다. -->
+    <!-- 인라인 방식. -->
+    <input type="button" onClick="alert('Hello JavaScript')" value="안녕 JavaScript"/>
+
+
+
+    <!-- 스크립트를 삽입하는 방식이다.
+          HTML 코드와 분리다 된다.
+          script는 HTML 문법이다.
+          브라우저에게 여기서부터는 스크립트 코드임을 알려준다. -->
+    <input type="button" id="hw" value="Hello World I'm akakim"/>
+
+    <script type="text/javascript">
+        var hw = document.getElementById('hw');
+        hw.addEventListener('click', function(){
+            alert("hw clicked I'm akakim ");
+        })
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<!-- https://opentutorials.org/course/1375/6622 book mark -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--
+      Note :
+         window.onload를 이용하여 맨 뒤에다가 놓을 수 있다. 하지만,
+         브라우저의 입장에서는 이걸 만나는 순간 이걸 다운로드하고 해석하고 있기
+         때문에 사용자의 입장에서는 하얀 화면만 만날 수 있다
+     -->
+    <script type="text/javascript" src="outerJavaScript.js"></script>
+</head>
+<body>
+    <input type="button" id="hw" value="HelloWorld"/>
+    <!--
+       브라우저가 캐시르 들고있을 가능성이 있다.
+
+        document.getElementById('hw') 의 경우 못찾을 수도 있다.
+        (브라우저의 무언가가 바뀐건지 무조건 onload를 해줘야 스크립트가 동작한다.
+    -->
+    <!--<script type="text/javascript" src="./outerJavaScript.js"></script>-->
+
+</body>
+</html>

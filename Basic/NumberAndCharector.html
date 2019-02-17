@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>생활코딩 숫자와 문자 챕터 </title>
+</head>
+<body>
+    <script type="text/javascript">
+        console.log(1); /* 로그 */
+        console.log(1.1); // float
+
+        console.log(1+1); //
+
+        // 조금 더 자세한 내용은
+        // https://opentutorials.org/course/50/39 의 Math
+        // 와 관련된 내용이 나온다.
+
+
+        // 문자를
+
+        console.log('hello ryoryeong coding everybody');
+        console.log("hello ryoryeong coding everybody");
+        console.log(' " hello " ');
+        console.log('hello ryoryeong\'s coding everybody'); // \ecscape 문이라고 이아길한다.
+
+        console.log(' ------- type of 에 관련하여 -------- ');
+
+        console.log(typeof 1); /* 로그 */
+        console.log(typeof 1.1); // float
+
+        console.log(typeof 1+1); //
+
+        // 조금 더 자세한 내용은
+        // https://opentutorials.org/course/50/39 의 Math
+        // 와 관련된 내용이 나온다.
+
+
+        // 문자를
+
+        console.log(typeof 'hello ryoryeong coding everybody');
+        console.log(typeof 'hello ryoryeong\'s coding everybody'); // \ecscape 문이라고 이아길한다.
+
+    // console.log( "ssss".indexOf(s));
+
+        const stringValue = '생활코딩 - 자바스크립트 레퍼런스';
+        console.log( stringValue.indexOf('생활')) ; // 0
+        stringValue.indexOf('코딩'); // 2
+        stringValue.indexOf('PHP'); // -1, PHP는 stringValue안에 존재하지 않는다
+
+        stringValue.indexOf('자바스크립트',0); // 7
+        stringValue.indexOf('자바스크립트',2); // 7, 두번째 인자로 2가 주어지면 탐색의 대상이 '코딩 - 자바스크립트 레퍼런스'로 줄어든다. index 값은 변하지 않는다
+        stringValue.indexOf('자바스크립트',10); // -1, '크립트 레퍼런스'에는 '자바스크립트'가 없기 때문에 -1을 리턴한다
+    </script>
+</body>
+</html>
